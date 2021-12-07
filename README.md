@@ -1,2 +1,2 @@
-# Tetris
-Game xếp hình
+# Game_Tetris
+Tetris

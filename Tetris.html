@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tetris</title>
+</head>
+<body>
+    <h1>GAME TETRIS</h1>
+    <div id="over" style="display: none;">
+        <label id="text" for="" style="font-size: 50px; text-align: center;" >GAME OVER</label>
+        <br>
+        <input id="diem" for="" style="font-size: 30px;" value = '' disabled>
+        <br>
+        <button class='btn' id="play">Chơi lại</button>
+        <button class='btn' id="exit">Thoát</button>
+    </div>
+    <div id="mainScreen" >
+
+    </div>
+    <div id="controler">
+        <h2>NEXT</h2>
+        <div id="nextScreen">
+
+        </div>
+        <div id="123"></div>
+        <div id="model">
+            <button id="volume1">
+                <img class='vote' src="image/volume.png" alt="">
+            </button>
+                
+            <button id="volume2"> <img class='cut'src="image/x_volume.png" alt="">
+               
+            </button>
+            <p class="abc"><label id="asd">Score <input type="text" id="txt_score" style="width: 90px;" value="" disabled></label></p>
+            <p class="abcd"><label>Level</label> 
+                <label class="number-input"> 
+                    <button id="left" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                    <input type="number" id="txt_level" name="quantity" min="1" max="5" style="width: 90px" disabled value="1">
+                    <button id="right" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </label>
+            </p>
+
+            <p class="abc"> <input type="button" id="btnStart" value="START" status="start"></p>
+            <p class="abc"> <input type="button" id="btnPlay" value="NEWPLAY" status="play"></p>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
